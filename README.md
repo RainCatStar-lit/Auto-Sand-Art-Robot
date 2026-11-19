@@ -50,7 +50,7 @@ cd Auto-Sand-Art-Robot
 ## 🤝 贡献 & 联系
 
 - **作者**：RainCatStar（广东实验中学 SSIR 机器人社）
-- **邮箱**：your-email@example.com
+- **邮箱**：zhaojoy2022d@163.com
 - **License**：MIT — 随便折腾，保留署名即可
 
-> **极客不设限，沙画也能玩出工程美学。**
+> **rcs希望沙画也能玩出工程美学。**

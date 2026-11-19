@@ -1,0 +1,99 @@
+# Auto-Sand-Art-Robot .gitignore
+
+# ===== IDE & Editor =====
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ===== Build Artifacts =====
+# PlatformIO
+.pio/
+.pioenvs/
+platformio.ldscript
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+dist/
+build/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Node / Web
+node_modules/
+dist/
+build/
+*.local
+.env
+.env.local
+.env.*.local
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.eslintcache
+
+# ===== OS / FS =====
+*.orig
+*.rej
+
+# ===== Hardware / EDA =====
+# JLC EDA 专业版临时文件
+*.bak
+*.tmp
+*.auto
+*.kicad_pcb-bak
+*.sch-bak
+# Gerber/制造文件不忽略，纳入版本控制
+# hardware/eda/output/  # 故意不忽略
+
+# ===== 3D Models =====
+# Fusion 360 源文件不入库（太大、二进制难审），仅存导出格式
+models/fusion360/*.f3d
+# 但保留参数导出表
+!models/fusion360/params_export.csv
+
+# 切片临时文件
+*.3mf.temp
+*.gcode.temp
+
+# ===== Logs & Data =====
+*.log
+logs/
+data/*.csv
+!data/calib_reference.csv
+!data/test_images/
+
+# ===== Secrets / Credentials =====
+*.pem
+*.key
+*.crt
+secrets.yaml
+config.local.json
+.wifi_credentials
+
+# ===== Test / Coverage =====
+coverage/
+.nyc_output/
+junit.xml
+
+# ===== Misc =====
+*.tar.gz
+*.zip
+*.rar
+*.7z
+.vscode/launch.json

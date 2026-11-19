@@ -60,8 +60,8 @@ models/
 
 | 参数名 | 单位 | 默认值 | 说明 |
 |--------|------|--------|------|
-| `bed_size_x` | mm | 320 | X 有效行程（含余量） |
-| `bed_size_y` | mm | 320 | Y 有效行程 |
+| `bed_size_x` | mm | 280 | X 有效行程（含余量，对应 256 mm 工作区） |
+| `bed_size_y` | mm | 280 | Y 有效行程（对应 256 mm 工作区） |
 | `profile_series` | - | "2020" | 型材规格 |
 | `linear_rail` | - | "MGN12H" | 导轨型号，驱动滑块座孔距 |
 | `belt_pitch` | mm | 2 | GT2 齿距 |

@@ -1,8 +1,8 @@
 # Auto-Sand-Art-Robot (星火计划悬赏项目)
 
-> 嘉立创「星火计划」悬赏赛道参赛项目 | CoreXY 架构 | ESP32 | JLC-EDA 双层板 | Fusion360
+> 嘉立创「星火计划」悬赏赛道参赛项目 | CoreXY 架构 | ESP32-S3 | JLC-EDA 双层板 | Fusion360
 
-![ESP32](https://img.shields.io/badge/MCU-ESP32-green?logo=espressif)
+![ESP32-S3](https://img.shields.io/badge/MCU-ESP32--S3-green?logo=espressif)
 ![CoreXY](https://img.shields.io/badge/Motion-CoreXY-orange)
 ![EDA](https://img.shields.io/badge/PCB-JLC--EDA-blue)
 ![CAD](https://img.shields.io/badge/CAD-Fusion_360-yellow?logo=autodesk)
@@ -20,9 +20,10 @@
 - **周期**：80 天，从 0 到 1
 - **预算**：约 2000-3000 元
 - **有效工作区**：256 × 256 mm 沙画工作区
-- **主控**：ESP32（Arduino 框架，多任务定时器）
+- **主控**：ESP32-S3（Arduino 框架，millis() 多任务 + 状态机）
 - **PCB**：嘉立创 EDA 专业版双层板，印有星火计划 Logo
 - **授权**：全部代码、3D 模型与电路图开源，MIT License
+- **控制方式**：图像→G-code 在手机/电脑端预处理完成，通过局域网发送给 ESP32 执行
 
 ## 硬件架构
 
@@ -47,9 +48,9 @@
 
 ## 软件层面
 
-主控采用 ESP32（基于 Arduino 框架），利用多任务定时器处理运动与流量控制。
+主控采用 ESP32-S3（基于 Arduino 框架），利用 `millis()` 轻量级多任务调度与状态机处理运动与流量控制，**不使用 FreeRTOS**。
 
-图像转 G 代码链路由 Python 脚本实现，提取图片轮廓并生成控制指令。
+图像转 G 代码链路由 Python 脚本在手机或电脑端完成，提取图片轮廓并生成控制指令，ESP32 仅负责接收并执行 G-code。Web 端保持极简，仅承担指令下发与状态显示。
 
 交付时将开源所有代码、3D 模型与电路图，最后邮寄验收。
 

@@ -1,4 +1,4 @@
-﻿# Models 目录 — 3D 打印件 BOM 规划
+# Models 目录 — 3D 打印件 BOM 规划
 
 > Fusion 360 参数化设计源文件、STL 导出、切片配置、打印件清单。  
 > 所有打印件由 Bambu Lab A1 完成；机械设计定稿详见 `docs/DESIGN.md`。
@@ -63,8 +63,8 @@ models/
 |------|------|------|------|----------|------|
 | `SH-MAIN-01` | `Toolhead_Main_Body` (出沙头主壳体) | 1 | PETG-CF | 工具头 | 含锥形阀腔与侧面进沙口，电磁铁固定座，O 型圈压槽，红外对管槽 |
 | `SH-SPC-02` | `Spool_Spacer` (软管限位环) | 2 | PETG-CF | 料盒/工具头软管沿线 | 限位食品级硅胶软管 φ4-5 mm，配合弹簧张力管理器 |
-| `SQ-HLD-01` | `Squeegee_Holder` (刮板支架) | 1 | PETG-CF | 龙门横梁后方 | 独立挂载，安装 SG90 舵机与 TPU 柔性刮片悬臂 |
-| `GT-BKT-01` | `Gantry_Bracket` (龙门架连接件) | 4 | PLA-CF | 龙门横梁四角 | 2020 铝型材与 MGN12H 滑块座刚性连接，M3 热熔铜螺母安装孔 |
+| `SQ-HLD-01` | `Squeegee_Holder` (刮板支架) | 1 | PETG-CF | 龙门横梁后方 | 独立挂载，安装 MG90S 舵机与 TPU 柔性刮片悬臂 |
+| `GT-BKT-01` | `Gantry_Bracket` (龙门架连接件) | 4 | PLA-CF | 龙门横梁四角 | 2020 铝型材与 MGN12H 滑块座刚性连接，M3 热熔铜螺母安装孔 |\n| `SV-LNK-01` | `Servo_Linkage_Arm` (舵机摇臂/齿条) | 1 | PETG-CF | 舵机输出轴 | 连接 MG90S 舵机与喷嘴滑块/刮板铰链，传递 90° 互斥联动 |\n| `NZ-SLD-01` | `Nozzle_Slider` (喷嘴 Z 轴滑块，含限位块) | 1 | PETG-CF | 工具头内部 | 导向喷嘴上下滑动，行程 3-5 mm，两端设物理限位挡块 |\n| `SQ-HNG-01` | `Squeegee_Hinge` (刮板铰链) | 1 | PETG-CF | 刮板支架 | 与舵机联动杆耦合，控制 TPU 刮片升降，与喷嘴互斥 |\n| `TT-SPR-01` | `Tube_Tensioner` (软管弹簧张紧器) | 1 | PETG-CF + 弹簧 | 软管沿线 | 轻质弹簧张紧，给硅胶软管恒定牵引，不限制 Z 轴升降 |
 
 > BOM 将随 Fusion 360 参数化设计冻结后，由 Fusion API 自动导出为 `bom/print_bom_v1.0.csv`（件号、名称、数量、材料、填充、预估重量、打印时间）。
 

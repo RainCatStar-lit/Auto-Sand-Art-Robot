@@ -9,7 +9,7 @@
 
 ## 我是谁，为什么做这个
 
-我是 RainCatStar，广东实验中学高二学生，SSIR 机器人社核心成员。14 岁起在 VEX 机器人赛场与 PID 闭环、运动规划打交道；15 岁自学 Fusion 360 参数化设计，拥有一台 Bambu Lab A1，在长期改装 3D 打印机的过程中积累了从切片策略到结构减重、共振抑制的工程经验；16 岁开始自学 ESP32 开发，并开始用 GitHub 规范管理项目。
+我是 RainCatStar，SSIR_GDSYZX 成员，致力于平面运动控制与粉体流控工程探索。本项目旨在从零搭建一台开源沙画机器人，验证 CoreXY 运动学、粉体流变学与闭环标定算法。
 
 我擅长的技术领域包括：机械结构设计与 3D 打印（Fusion 360）、嵌入式开发（ESP32/Arduino）、运动控制逻辑以及快速应用开发。我具备强大的自学能力，能在极短时间内掌握嘉立创 EDA 的基础操作并完成双层 PCB 设计。
 
@@ -86,7 +86,7 @@ cd Auto-Sand-Art-Robot
 
 ## 🤝 贡献 & 联系
 
-- **作者**：RainCatStar（广东实验中学 SSIR 机器人社）
+- **作者**：RainCatStar @ SSIR_GDSYZX
 - **邮箱**：zhaojoy2022d@163.com
 - **License**：MIT — 随便折腾，保留署名即可
 

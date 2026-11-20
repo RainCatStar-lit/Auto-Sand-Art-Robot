@@ -3,7 +3,7 @@
 > 项目：Auto-Sand-Art-Robot（星火计划悬赏赛道）  
 > 板层：双层板（Top + Bottom，1.6mm）  
 > 主控：ESP32-S3-WROOM  
-> 作者：RainCatStar（广东实验中学 SSIR 机器人社高二学生）  
+> 作者：RainCatStar @ SSIR_GDSYZX
 > 状态：第一版原理图，边学边画，难免有坑，欢迎拍砖
 
 ---
